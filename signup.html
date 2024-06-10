@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Urban Entrepreneur Universe - Sign Up</title>
+<link rel="icon" href="public/images/logo.png" type="image/png"> <!-- PNG format -->
+<link rel="stylesheet" href="/src/assets/signup.css">
+</head> 
+<body>
+<div class="row">
+    <div class="signup-form">
+        <img class="subtitle-text" src="/public/images/logo_letters.png"></img>
+        <h2>Create an account</h2>
+        <form  id="signup-form">
+            <div class="input-group">
+                <input type="text" id="username" name="username" placeholder="" required>
+                <label for="username">Username</label>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" name="email" placeholder="" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder="" required>
+                <label for="password">Password</label>
+            </div>
+            <div class="input-group">
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="" required>
+                <label for="confirm_password">Confirm Password</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" name="terms" id="terms">
+                <label for="terms">
+                    <span class="custom-checkbox"></span>
+                    I agree to the 
+                    <a href="#privacy-policy" class="text-button">Privacy Policy</a> &
+                    <a href="#terms-conditions" class="text-button">Terms & Conditions</a>
+                </label>
+            </div>                    
+            <button type="submit">SIGN UP</button>
+            <div class="signin-link">
+                Already have an account? <a href="/signin">Sign In</a>
+            </div>
+        </form>
+  
+     </div>
+     <img src="https://ueu-bucket.s3.us-east-2.amazonaws.com/apps_assets/logins/UEU_Mighty_Vaults_Sign_up_page_Photo.png" class="side-image">
+  
+    </img>
+</div>
+<script src="/src/signup.js"></script>
+</body>
+</html>

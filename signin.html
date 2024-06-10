@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Urban Entrepreneur Universe - Sign In</title>
+<link rel="icon" href="public/images/logo.png" type="image/png"> <!-- PNG format -->
+
+<link rel="stylesheet" href="/src/assets/signup.css">
+</head> 
+<body>
+<div class="row">
+    <div class="signup-form">
+        <img class="subtitle-text" src="/public/images/logo_letters.png"></img>
+
+        <h2>Sign In</h2>
+        <p class="subtitle-text">Enter Your Username & Password to Access Your Account</p>
+        <form id="signin-form">
+            <div class="input-group">
+                <input type="text" id="username" name="username" placeholder="" required>
+                <label for="username">Username or Email</label>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder="" required>
+                <label for="password">Password</label>
+            </div>
+            <div class="form-row">
+                <div class="checkbox-group">
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember">
+                        <span class="custom-checkbox"></span>
+                        Remember Me
+                    </label>
+                </div>
+                <a href="#forget-password" class="text-button-forgot-password">Forgot Password?</a>
+            </div>
+            <button type="submit">SIGN IN</button>
+            <div class="signin-link">
+                Don\'t have an Account?<a href="/signup">Sign Up</a>
+            </div>
+        </form>
+  
+     </div>
+     <img src="https://ueu-bucket.s3.us-east-2.amazonaws.com/apps_assets/logins/UEU_Mighty_Vaults_Sign_up_page_Photo.png" class="side-image">
+  
+    </img>
+</div>
+<script src="/src/signin.js"></script>
+</body>
+</html>

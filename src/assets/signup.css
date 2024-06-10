@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Includes padding and borders in the element's total dimensions */
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  height: 100%; /* Ensures the full height is used */
+  overflow: hidden; /* Prevents scrolling from any overflow */
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form {
+  background: white;
+  height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Aligns form contents centered */
+  justify-content: center;
+  position: relative;
+  padding: 20px; /* Add padding to ensure contents do not touch the edges */
+}
+
+.side-image {
+  flex: 1;
+  background: white;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1100px) {
+  .side-image {
+    display: none;
+  }
+}
+
+.signup-form h2 {
+  color: #333;
+  width: 400px; /* Same width as the input fields */
+  margin: 0 auto; /* Centers the heading and aligns it with input fields */
+  padding-bottom: 20px; /* Space below the heading */
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 400px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  top: -12px;
+  background: white;
+  color: #007bff;
+}
+
+.input-group label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: all 0.3s ease;
+  color: #999;
+  background: transparent;
+  padding: 0 5px;
+}
+
+/* General container styling */
+.checkbox-group {
+  width: 400px; /* Same width as the input fields */
+  margin: 0 auto; /* Aligns checkboxes with input fields */
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Styling for label to align text with the checkbox */
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Hide the default checkbox */
+.checkbox-group input[type="checkbox"] {
+  display: none;
+}
+
+/* Custom checkbox appearance */
+.checkbox-group .custom-checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #9e9e9e;
+  border-radius: 4px; /* Add radius for rounded corners */
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+  background-color: white; /* Default background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+}
+
+/* Checkmark animation */
+.checkbox-group input[type="checkbox"]:checked + label .custom-checkbox::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg); /* Center the checkmark */
+}
+
+/* Custom checkbox background when checked */
+.checkbox-group input[type="checkbox"]:checked + label .custom-checkbox {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Hover effect */
+.checkbox-group label:hover .custom-checkbox {
+  border-color: #007bff;
+}
+
+/* Focus effect */
+.checkbox-group input[type="checkbox"]:focus + label .custom-checkbox {
+  outline: 2px solid #9e9e9e;
+  outline-offset: 2px;
+}
+
+/* Styling for text buttons */
+.text-button {
+  color: #007bff;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.text-button:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Styling for text buttons */
+.text-button-forgot-password {
+  color: #007bff;
+  text-decoration: none;
+  margin: 0 5px;
+  width: 200px;
+  transition: color 0.3s ease;
+}
+
+.text-button-forgot-password:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+button {
+  width: 400px;
+  padding: 10px;
+  border: none;
+  margin-top: 50px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 auto; /* Centers button */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.signin-link {
+  margin-top: 15px;
+  padding-top: 20px;
+  width: 400px; /* Same width as the input fields */
+  display: flex;
+  justify-content: center;
+  margin: 0 auto; /* Centers link */
+}
+
+.signin-link a {
+  color: #007bff;
+  padding-left: 8px;
+  text-decoration: none;
+}
+
+.signin-link :hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Styling for the form row */
+.form-row {
+  display: flex;
+  width: 400px;
+}
+
+.subtitle-text {
+  width: 400px;
+  padding-bottom: 20px;
+}
